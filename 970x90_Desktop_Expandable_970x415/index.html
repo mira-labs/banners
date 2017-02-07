@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta data-template-name="Template_H5T_expanding-728x90-video">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+</head>
+<body>
+    <div id="main-container">
+      <!-- Collapsed Conent -->
+      <div id="collapsed-state">
+        <div class="feature-collapsed" id="feature-collapsed">
+      <div id="main-img-0"></div></div>
+        <div id="expand-button" class="button">
+          Click to expand
+        </div>
+      </div>
+
+      <!-- Expand Content -->
+      <div id="expanded-state">
+
+        <div id="expanded-exit"></div>
+        <div id="collapse-button" class="button">X</div>
+        <div class="feature-expanded" id="feature-expanded">
+    <div id="video-container-1">
+        <video id="video-1">
+           <!-- Sources will be added via JS using Enabler.getUrl calls. -->
+        </video>
+        <button id="play-btn-1" class="video-controls"></button>
+        <button id="pause-btn-1" class="video-controls"></button>
+        <button id="stop-btn-1" class="video-controls"></button>
+        <button id="replay-btn-1" class="video-controls"></button>
+        <!-- <button id="unmute-btn-1" class="video-controls"></button> -->
+        <!-- <button id="mute-btn-1" class="video-controls"></button> -->
+        <div id="progress-bar-1"></div>
+     </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="logic.js"></script>
+</body>
+</html>

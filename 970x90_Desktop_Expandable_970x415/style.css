@@ -1,0 +1,213 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #333;
+}
+
+
+#main-container {
+  position: absolute;
+  width: 970px;
+  height: 600px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+#collapsed-state {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 970px;
+  height: 90px;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  background-color: #EEE;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#expanded-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F1F1F1;
+  z-index: 200;
+  border: 1px solid black;
+  display: none;
+}
+
+#expanded-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+.button {
+  position: absolute;
+  color: #FFF;
+  background-color: #339933;
+  border: 1px outset #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+#expand-button {
+  bottom: 5px;
+  right: 5px;
+  display: none;
+}
+
+#collapse-button {
+  top: 5px;
+  right: 5px;
+  display: block;
+  font-weight: bold;
+  color:#15B100;
+  background-color: #FFF;
+  border: 1px solid #15B100;
+  border-radius: 3px 0px 3px 3px;
+}
+
+.feature-collapsed {
+  top: 10px;
+  left: 318px;
+  width: 92.44444444444444px;
+  height: 70px;
+  position: absolute;
+}
+
+.feature-expanded {
+  top: 92px;
+  left: 10px;
+  width: 708px;
+  height: 416.25px;
+  position: absolute;
+}
+
+#main-img-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(dclk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+#video-container-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: none;
+  z-index: 500;
+  border: none;
+  visibility: hidden;
+}
+
+#video-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 18px;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.video-controls {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: -1px;
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+/* Video button hiding an positioning */
+.video-controls:hover {
+  border-bottom: 1px solid #666;
+}
+
+#play-btn-1 {
+  background-image:url(play.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  left: 0;
+}
+
+#progress-bar-1 {
+  position: absolute;
+  background-color: #339933;
+  bottom: 18px;
+  height: 4px;
+}
+
+#pause-btn-1 {
+  background-image:url(pause.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  left: 0px;
+  visibility: hidden;
+}
+
+#stop-btn-1 {
+  background-image:url(stop.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  left: 20px;
+}
+
+#unmute-btn-1 {
+  background-image:url(unmute.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  right: 0px;
+}
+
+#mute-btn-1 {
+  background-image:url(mute.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  right: 0px;
+  visibility: hidden;
+}
+
+#replay-btn-1 {
+  background-image:url(replay.svg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  left: 40px;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
